@@ -1,0 +1,42 @@
+/*
+Theme Name:     Typeoffun
+Theme URI:      
+Description:    Storefront child theme.
+Author:         Me
+Author URI:     
+Template:       storefront
+Version:        0.1.0
+*/
+
+/*Hides Page Title on Store*/
+h1.woocommerce-products-header__title.page-title {display:none}
+
+/*Remove Padding on storefront*/
+header.woocommerce-products-header {padding: 0 0 0em!important;}
+
+/*hides Posted on*/
+span.posted-on {
+    display: none;
+}
+
+/*hides left column on blog*/
+aside.entry-meta {
+    display: none;
+}
+/*moves content left on blog*/
+.entry-content {
+    float: left!important;
+    width: 95%!important;
+}
+
+/*Hides Sorting options*/
+.storefront-sorting {display: none;}
+
+/*Modifies Logo size on desktop*/
+
+
+@media screen and (min-width: 768px) {
+	.site-header .site-branding, .site-header .site-logo-anchor, .site-header .site-logo-link, .site-header .custom-logo-link img {
+		width: 33%; /* Adjust this percentage up or down to make the logo larger or smaller. */
+	}
+}
