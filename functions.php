@@ -22,8 +22,8 @@ function custom_remove_footer_credit () {
 function custom_storefront_credit() {
 	?>
 	<div class="site-info">
-		&copy; <?php echo get_bloginfo( 'name' ) . ' ' . get_the_date( 'Y' ); ?>
-		&gt; <?php echo date("Y"); ?>
+		&copy; <?php echo get_bloginfo( 'name' ) ?>
+		  <?php echo date("Y"); ?> 
 	</div><!-- .site-info -->
 	<?php
 }
